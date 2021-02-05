@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary      
+Library    SeleniumLibrary 
+Documentation    Cette suite de test est pour expliquer la syncronisation     
 
 
 *** Test Cases ***
@@ -55,6 +56,11 @@ loginTest4
     
     Set Selenium Implicit Wait    20s
     Click Button    //input[@id="btnLogin1"]
+    
+
+loginTest5
+    Log To Console    Hello    
+    [Documentation]    ceci est ub simple test
  
 
 
